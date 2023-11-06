@@ -26,3 +26,16 @@
 ### 배열
 ### 객체
 ### 함수
+
+## React 컴포넌트의 기본 구조
+- 함수 컴포넌트
+- 클래스 컴포넌트
+
+| 관련개념
+
+    생명 주기: 애플리케이션이나 컴포넌트가 생성되고 업데이트 되며, 제거될 때까지 일어나는 일련의 이벤트와 상태 변화.
+
+| 주요 메서드
+  - componentDidMount()
+  - componentDidUpdate(prevProps, prevState)
+  - componentWillUnmount()
