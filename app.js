@@ -8,10 +8,13 @@
   
   @example
   component{
-  "div".
-  {style: "color: blue;"},
-  [component("hi", {}, ["This is Page 1"]
+    "div".
+    {style: "color: blue;"},
+    [component("hi", {}, ["This is Page 1"]
   )];
 }
 */
 
+function component(elementNode, attributes, children){
+  
+}
