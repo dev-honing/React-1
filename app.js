@@ -31,20 +31,24 @@ function component(elementNode, attributes, children) {
       // children 매개변수는 배열이어야 한다.
       // 배열의 각 요소를 순회하는 forEach()를 사용했다.
       // 절차형으로 for문을 사용해도 되지만, 자바스크립트 다운 방식으로 작성했다.
-      if (typeof child === 'string') {
+      if (typeof child === "string") {
         elementStr += child;
       } else {
-        elementStr += component(child.elementNode, child.attributes, child.children);
+        elementStr += component(
+          child.elementNode,
+          child.attributes,
+          child.children
+        );
       }
     });
   }
   elementStr += `</${elementNode}>`; // 맨 위 변수에 덧붙여서 반환한다.
-  
+
   return elementStr; // 함수가 호출되는 순간 문자열이 반환된다.
 }
 
 // 문자열로 잘 작동하는지 테스트한 코드
-let test = component('div', { style: 'color: blue;'}, [
-  component('h1', {}, ['This is Page 1'])
+let test = component("div", { style: "color: blue;" }, [
+  component("h1", {}, ["This is Page 1"]),
 ]);
 console.log(test); // <div style="color: blue;"><h1>This is Page 1</h1></div>
