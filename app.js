@@ -21,7 +21,7 @@ function component(elementNode, attributes, children) {
     // 객체의 키(key)를 배열처럼 순회한다.
     // 매개변수 attributes는 객체여야 for in문을 사용할 수 있다.
     // 대표적으로 Python에서는 해당 문법 접근이 기본 반복문이다.
-    elementStr += `${key} = "${attributes[key]}"`;
+    elementStr += ` ${key}="${attributes[key]}"`;
   }
   elementStr += ">";
   // 만약 children이라는 값이 '있다면' true 판정이 이루어진다.
@@ -47,4 +47,4 @@ function component(elementNode, attributes, children) {
 let test = component('div', { style: 'color: blue;'}, [
   component('h1', {}, ['This is Page 1'])
 ]);
-console.log(test); // <divstyle = "color: blue;"><h1>This is Page 1</h1></div>
+console.log(test); // <div style="color: blue;"><h1>This is Page 1</h1></div>
