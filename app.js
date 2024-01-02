@@ -1,4 +1,4 @@
-$/**
+/**
  * JSDoc 주석을 사용하여 함수를 설명한다.
  *
  * @param {string} elementNode - HTML 요소의 이름을 나타내는 문자열
@@ -47,3 +47,4 @@ function component(elementNode, attributes, children) {
 let test = component('div', { style: 'color: blue;'}, [
   component('h1', {}, ['This is Page 1'])
 ]);
+console.log(test); // <divstyle = "color: blue;"><h1>This is Page 1</h1></div>
