@@ -10,4 +10,4 @@ greeting += ", ";
 greeting += "React!";
 
 // 변수 greeting을 출력
-console.log(greeting);
+console.log(greeting); // Hello, React!
