@@ -8,3 +8,6 @@ let greeting = "Hello";
 // +=를 이용해 추가할 문자열 입력
 greeting += ", ";
 greeting += "React!";
+
+// 변수 greeting을 출력
+console.log(greeting);
